@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import tempModeModel, temperatureModel,UssModel
+from .models import tempModeModel, temperatureModel,UssModel,IotModel
 
 class TempModeSerializer(serializers.ModelSerializer):
     class Meta:
@@ -15,3 +15,8 @@ class UssSerializer(serializers.ModelSerializer):
     class Meta:
         model = UssModel
         fields = ['id', 'uss']
+
+class IotSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = IotModel
+        fields = ['id','temperature_iot','temp_mode_iot','uss_iot']
