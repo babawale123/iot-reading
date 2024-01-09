@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import temperatureModel,tempModeModel,UssModel,IotModel
+from .models import IotModel
 
 admin.site.register((IotModel))
