@@ -1,9 +1,7 @@
 from django.urls import path
-from .views import GetTemperature,GetTempMode,GetUss
+from .views import GetIot
 
 
 urlpatterns = [
-    path('temperature/',GetTemperature.as_view()),
-    path('tempe-mode/',GetTempMode.as_view()),
-    path('uss/',GetUss.as_view())
+    path('iot-readings/',GetIot.as_view()),
 ]
