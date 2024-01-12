@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-#35*+lmf^3o+yy&r(63wybku)=ggsl2e7&!42a90jm*ui1a#-u
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["Ramson.pythonanywhere.com"]
+ALLOWED_HOSTS = ["Ramson.pythonanywhere.com",'127.0.0.1']
 
 
 # Application definition
@@ -121,6 +121,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 STATIC_ROOT = BASE_DIR / "staticfiles"
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
